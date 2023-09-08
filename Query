@@ -1,0 +1,17 @@
+Q1 how to find dublicate data in tabe and deleter dulicate data delete 
+=====================================
+ From: Rohit PC (.Net Developer/DESKTOP-GTOCKVQ/192.168.1.166/Vibrant 2-<ae7cc9e9aad5d7fd>)
+  at Fri Sep 08 11:25:45 2023
+-------------------------------------
+Create table RoEmployee 
+(
+EmpId int,
+EMpname  nvarchar(20)
+)
+insert into RoEmployee(EmpId,EMpname)values(101,'Rohit')
+;WITH CTE AS (
+  SELECT EmpId,EMpname,
+         ROW_NUMBER() OVER(PARTITION BY EmpId ORDER BY EmpId) AS RowNum
+  FROM RoEmployee
+)
+DELETE FROM CTE WHERE RowNum > 1;
