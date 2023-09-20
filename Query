@@ -1,8 +1,4 @@
 Q1 how to find dublicate data in tabe and deleter dulicate data delete 
-=====================================
- From: Rohit PC (.Net Developer/DESKTOP-GTOCKVQ/192.168.1.166/Vibrant 2-<ae7cc9e9aad5d7fd>)
-  at Fri Sep 08 11:25:45 2023
--------------------------------------
 Create table RoEmployee 
 (
 EmpId int,
@@ -16,3 +12,11 @@ insert into RoEmployee(EmpId,EMpname)values(101,'Rohit')
 )
 DELETE FROM CTE WHERE RowNum > 1;
 #My Test
+
+Q-2 convert string to int (model use string and database cloun int )
+Ans-convert(nvarchar(20),C_Code)C_Code
+
+
+
+
+
