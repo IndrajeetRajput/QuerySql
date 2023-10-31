@@ -22,6 +22,12 @@ Q-4 crunt date and time
 Ans-  DateTime currentDate = DateTime.Now;
 txtGrossTime.Text = DateTime.Now.ToString("HH:mm");
 txtGrossDt.Text = DateTime.Now.ToString("dd/MM/yyyy");
+Constr.currentuser=Sysdate
+Q-5fixlethe in quiry in clounm
+(substr(g_name,1,20))g_name
+Q-6 how to use case in sql
+sum( case when p_bank_cd=0 then p_prpurpayamt else 0 end ) NonAccountHolder
+nvl(sum((case when lt_loantypegroup=1 then ld_amount  else 0 end )),0)factloan
 
 
 
