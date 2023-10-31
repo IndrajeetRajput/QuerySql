@@ -16,6 +16,15 @@ DELETE FROM CTE WHERE RowNum > 1;
 Q-2 convert string to int (model use string and database cloun int )
 Ans-convert(nvarchar(20),C_Code)C_Code
 
+Q-3 date time formet
+ var Qry = "Select id, H_Name,format(F_Date,'dd/MM/yyyy')F_Date from tbl_Holidays where ISNULL(IsDeleted,0)=0";
+Q-4 crunt date and time 
+Ans-  DateTime currentDate = DateTime.Now;
+txtGrossTime.Text = DateTime.Now.ToString("HH:mm");
+txtGrossDt.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+
+
 
 
 
