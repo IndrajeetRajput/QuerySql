@@ -21,8 +21,16 @@ Q-3 date time formet
 Q-4 crunt date and time 
 Ans-  DateTime currentDate = DateTime.Now;
 txtGrossTime.Text = DateTime.Now.ToString("HH:mm");
-txtGrossDt.Text = DateTime.Now.ToString("dd/MM/yyyy");
+txtGrossDt.Text = DateTime.Now.ToString("dd/MM/yyyy");  
 Constr.currentuser=Sysdate
+ DateTime ss = DateTime.Now;
+            int year = ss.Year;
+            model.Year = year.ToString();
+            model.Month = ss.Month.ToString();
+
+
+
+
 Q-5fixlethe in quiry in clounm
 (substr(g_name,1,20))g_name
 Q-6 how to use case in sql
