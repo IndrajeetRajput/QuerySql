@@ -37,6 +37,11 @@ Q-6 how to use case in sql
 sum( case when p_bank_cd=0 then p_prpurpayamt else 0 end ) NonAccountHolder
 nvl(sum((case when lt_loantypegroup=1 then ld_amount  else 0 end )),0)factloan
 
+Q.1o how to insert two table fist table is emplty and second table use insert first table 
+insert into Token ([T_CentreCode], [T_alt_Cen], [T_Shift], [T_CounterNo], [T_Date1], [T_IndentNo], [T_Dated], [T_VillCode], [T_GrowerCode], [T_ModSupp], [T_CaneCategory], [T_CaneQuality], [T_Cane_TYPE], [T_Variety], [T_BillaNo], [T_HologramNo], [T_TokenNo], [T_TrollyNo], [T_CardNo], [T_CardSt], [T_ImageName], [T_KattaNo], [T_IsFree], [T_MargeFrom], [T_BD_CD], [T_Cr_by], [T_up_by], [T_Cr_Date], [T_UP_Date], [T_Date], [T_Status], [T_Unit], [isweb], [unit]
+)
+select top(1) [T_CentreCode], [T_alt_Cen], [T_Shift], [T_CounterNo], [T_Date1], [T_IndentNo], [T_Dated], [T_VillCode], [T_GrowerCode], [T_ModSupp], [T_CaneCategory], [T_CaneQuality], [T_Cane_TYPE], [T_Variety], [T_BillaNo], [T_HologramNo], [T_TokenNo], [T_TrollyNo], [T_CardNo], [T_CardSt], [T_ImageName], [T_KattaNo], [T_IsFree], [T_MargeFrom], [T_BD_CD],  [T_Cr_by], [T_up_by], [T_Cr_Date], [T_UP_Date], [T_Date], [T_Status], [T_Unit], [isweb], 0 from LOG_TOKEN where T_IndentNo=110687323915
+
 
 
 
