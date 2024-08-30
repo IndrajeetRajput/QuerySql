@@ -42,7 +42,11 @@ insert into Token ([T_CentreCode], [T_alt_Cen], [T_Shift], [T_CounterNo], [T_Dat
 )
 select top(1) [T_CentreCode], [T_alt_Cen], [T_Shift], [T_CounterNo], [T_Date1], [T_IndentNo], [T_Dated], [T_VillCode], [T_GrowerCode], [T_ModSupp], [T_CaneCategory], [T_CaneQuality], [T_Cane_TYPE], [T_Variety], [T_BillaNo], [T_HologramNo], [T_TokenNo], [T_TrollyNo], [T_CardNo], [T_CardSt], [T_ImageName], [T_KattaNo], [T_IsFree], [T_MargeFrom], [T_BD_CD],  [T_Cr_by], [T_up_by], [T_Cr_Date], [T_UP_Date], [T_Date], [T_Status], [T_Unit], [isweb], 0 from LOG_TOKEN where T_IndentNo=110687323915
 
-
+Q.11 HOW TO USE SQL QURY IN BETHOUT ICREMENT USE SERIAL NUMBER
+Ans.SELECT ROW_NUMBER() OVER (ORDER BY Id) AS RowNum,* FROM TestTable
+Q 12.how to generat same table crate dublicate same structre 
+Ans.SELECT * INTO Employee1
+FROM Employee WHERE 1 = 2;
 
 
 
