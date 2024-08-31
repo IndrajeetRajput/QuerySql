@@ -70,6 +70,11 @@ select sn,Row_number()over(order by sn desc)as secondhight
 from DETAILS)as secondd
 where secondhight=1
 
+AND second salary
+select sn from DETAILS where sn=
+(
+select max(Sn) from DETAILS where sn<(select max(sn) from DETAILS  )
+)
 
 
 
