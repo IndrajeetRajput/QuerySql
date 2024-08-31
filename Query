@@ -48,6 +48,28 @@ Q 12.how to generat same table crate dublicate same structre
 Ans.SELECT * INTO Employee1
 FROM Employee WHERE 1 = 2;
 
+Q.12 How to delete dublicate values in table 
+Ans.when just cheack value 
+SELECT EMPNAME,DEPT,CONTACTNO,CITY, 
+COUNT(*) FROM DETAILS
+GROUP BY EMPNAME,DEPT,CONTACTNO,CITY
+
+Ans
+DELETE FROM DETAILS
+WHERE SN NOT IN (
+    SELECT MIN(SN)
+    FROM DETAILS
+    GROUP BY EMPNAME, DEPT, CONTACTNO, CITY
+);
+Select * FROM DETAILS;
+
+Q.How to find any hieghtest salary 
+Ans.
+select sn as secondhight  from(
+select sn,Row_number()over(order by sn desc)as secondhight
+from DETAILS)as secondd
+where secondhight=1
+
 
 
 
