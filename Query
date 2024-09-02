@@ -63,6 +63,15 @@ WHERE SN NOT IN (
 );
 Select * FROM DETAILS;
 
+//And 2rd use cte
+WITH CTE AS (
+    SELECT 
+        *,
+        ROW_NUMBER() OVER (PARTITION BY EmployeeName,EmployeeSalary,EmployeeCity ORDER BY (SELECT NULL)) AS RowNum
+    FROM Employee
+)
+DELETE FROM CTE WHERE RowNum > 1;
+
 Q.How to find any hieghtest salary 
 Ans.
 select sn as secondhight  from(
