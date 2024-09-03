@@ -84,6 +84,45 @@ select sn from DETAILS where sn=
 (
 select max(Sn) from DETAILS where sn<(select max(sn) from DETAILS  )
 )
+Q. write a patter progaram 
+Ans 
+using System.IO;
+using System;
+
+class progrm
+{
+    public static void Main()
+    {
+        int n = 4;
+        for(int i=-n+1;i<=n-1;i++)
+        {
+            int abst = Math.Abs(i);
+            int patter=n+abst;
+           for(int j=0;j<patter;j++)
+            {
+                if(j<n-abst-1)
+                {
+                    Console.Write(" ");
+                }
+                else
+                {
+                    Console.Write("*");
+                }
+               
+            }
+              Console.WriteLine();
+        }
+       
+    }
+}
+
+
+ourpur
+ *****
+  ***
+   *
+  ***
+ ******
 
 
 
