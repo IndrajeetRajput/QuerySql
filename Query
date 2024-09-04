@@ -124,6 +124,13 @@ ourpur
   ***
  ******
 
+Q. Write a query to find the top 5 customers with the highest total order amounts.
+Ans
+select top 5 EmpID,sum(AadharNo)as AadharNo from Employee
+group by EmpID
+order by AadharNo desc
+
+
 
 
 
