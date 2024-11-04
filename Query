@@ -130,6 +130,10 @@ select top 5 EmpID,sum(AadharNo)as AadharNo from Employee
 group by EmpID
 order by AadharNo desc
 
+Q.date convert 
+  string FROMDATE = DateTime.ParseExact(model.FromDate, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd");
+                string TODATE = DateTime.ParseExact(model.ToDate, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd");
+
 
 
 
