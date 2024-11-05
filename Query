@@ -134,6 +134,12 @@ Q.date convert
   string FROMDATE = DateTime.ParseExact(model.FromDate, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd");
                 string TODATE = DateTime.ParseExact(model.ToDate, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd");
 
+Q Serching with textbox in use drop down
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/bower_components/select2/js/select2.full.min.js"></script>
+<script>
+    $('#supplier_code').select2({});
+</script>
 
 
 
